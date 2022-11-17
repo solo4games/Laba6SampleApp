@@ -1,8 +1,9 @@
-require "test_helper"
+require 'test_helper'
 
-class UsersControllerTest < ActionDispatch::IntegrationTest
+class UserControllerTest < ActionController::TestCase
+
   test "should get new" do
-    get users_new_url
+    get :new
     assert_response :success
   end
 end
